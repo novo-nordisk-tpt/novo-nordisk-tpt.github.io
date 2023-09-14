@@ -34,14 +34,14 @@
 				}, 375);
 			});
 		</script>
-				<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 	</head>
 	<body>
 		<style>
 			#greetModal
 			{
-				z-index: 9999999
+			z-index: 9999999
 			}
 			p.specialnote:target{
 			background-color:lightgrey;
@@ -61,42 +61,54 @@
 			border:transparent
 			}
 			.img-container {
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-}
-
-.img-container img {
-  object-fit: cover;
-  height: 100%;
-  width: 100%;
-}
-
+			position: fixed;
+			top: 0;
+			left: 0;
+			height: 100%;
+			width: 100%;
+			z-index: 1;
+			}
+			.img-container img {
+			object-fit: cover;
+			height: 100%;
+			width: 100%;
+			}
+			.gradient-overlay {
+			position: fixed;
+			top: 0;
+			left: 0;
+			height: 100%;
+			width: 100%;
+			background: linear-gradient(transparent, rgba(42, 42, 42, 0.7));
+			z-index: 2;
+			}
+			.modal-fullscreen .modal-body
+			{
+			z-index: 3
+			}
 		</style>
 		<div class="loader-wait">
 		</div>
-<!-- Modal -->
-<div class="modal fade" id="greetModal" tabindex="-1" aria-labelledby="greetModalLabel" aria-hidden="true">
-	<div class="modal-dialog modal-fullscreen modal-dialog-centered">
-	  <div class="modal-content p-0">
-		<div class="img-container">
-		  <img src="modalbg.webp">
+		<!-- Modal -->
+		<div class="modal fade" id="greetModal" tabindex="-1" aria-labelledby="greetModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-fullscreen modal-dialog-centered">
+				<div class="modal-content p-0">
+					<div class="img-container">
+						<img src="modalbg.webp">
+						<div class="gradient-overlay"></div>
+					</div>
+					<div class="modal-body text-left w-75 text-white d-flex align-items-end p-3">
+						<h1>Welcome to HERMES.</h1>
+					</div>
+					<div class="modal-body text-left w-75 text-white d-flex align-items-end p-3">
+						<p>HERMES is a phase 3 cardiovascular outcome trial(CVOT) exploring the potential cardiovascular effects of ziltivekimab versus placebo on morbidity and mortality in patients with heart failure with mildly reduced (HFmrEF) or preserved ejection fraction (HFpEF) and systemic inflammation. The trial will involve around 5,600 patients globally from more than 40 countries.</p>
+					</div>
+					<div class="modal-footer justify-content-start" style="z-index:999999999">
+						<button type="button" class="btn btn-light text-uppercase rounded-pill btn-lg btn-learnmore" data-bs-dismiss="modal">Learn more <i class="fa text-black fa-arrow-right"></i></button>
+					</div>
+				</div>
+			</div>
 		</div>
-		<div class="modal-body text-left w-75 text-white d-flex align-items-end p-3">
-		  <h1>Welcome to HERMES.</h1>
-		</div>
-		<div class="modal-body text-left w-75 text-white d-flex align-items-end p-3">
-		  <p>HERMES is a phase 3 cardiovascular outcome trial(CVOT) exploring the potential cardiovascular effects of ziltivekimab versus placebo on morbidity and mortality in patients with heart failure with mildly reduced (HFmrEF) or preserved ejection fraction (HFpEF) and systemic inflammation. The trial will involve around 5,600 patients globally from more than 40 countries.</p>
-		</div>
-		<div class="modal-footer justify-content-start" style="z-index:999999999">
-		  <button type="button" class="btn btn-light text-uppercase rounded-pill btn-lg btn-learnmore" data-bs-dismiss="modal">Learn more <i class="fa text-black fa-arrow-right"></i></button>
-		</div>
-	  </div>
-	</div>
-  </div>
-  
 		<header>
 			<div class="container p-0">
 				<div class="w-100 header-data">
