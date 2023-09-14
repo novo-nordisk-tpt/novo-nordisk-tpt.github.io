@@ -1,166 +1,128 @@
 <!doctype html>
 <html lang="en">
-
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=0.9">
-	<title>Inclusion & exclusion criteria reference</title>
-	<script src="/jquery-3.7.1.min.js"></script>
-	<style>
-	:root {
-        --nnSeaBlue: rgb(0,90,210);
-        --nnTrueBlue: rgb(0,25,101);
-        --nnSandGrey100: rgb(204,197,189);
-        --nnSandGrey40: rgb(235,232,229);
-        --nnSandGrey15: rgb(247,246,245);
-    }
-	</style>
-	<script>
-		$(window).on('DOMContentLoaded', function() {
-			$('.loader-wait').fadeOut(375);
-			setTimeout(() => {
-				$('.loader-wait').remove()
-			}, 450);
-		});
-	</script>
-	<style>
-		:root {
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=0.9">
+		<title>Inclusion & exclusion criteria reference</title>
+		<style>
+			:root {
 			--nnSeaBlue: rgb(0,90,210);
 			--nnTrueBlue: rgb(0,25,101);
 			--nnSandGrey100: rgb(204,197,189);
 			--nnSandGrey40: rgb(235,232,229);
 			--nnSandGrey15: rgb(247,246,245);
-		}
-		.loader-wait{
-		background-color: white;
-		z-index: 999;
-		width: 100%;
-		height: 100%;
-		position: fixed;
-		}
-	</style>
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-</head>
-
-<body>
-	<div class="loader-wait">
-	</div>
-	<header>
-		<div class="container p-0">
-			<div class="w-100 header-data">
-        <div class="d-table-cell" style="margin: 0 auto">
-        </div>
-	</div>
-	</header>
-	<article class="pb-3 mb-3">
-		<div class="container">
-			<div class="row pb-2 pt-2">
-				<div class="col-lg-12">
-          <div class="row pb-2 pt-2 d-flex flex-row-reverse align-items-center">
-            <div class="col-lg-6 text-center">
-              <div class="text-lg-end w-100">
-                <img class="image-responsive logo" alt="NovoNordisk Logo" src="novonordisk.png" />
-              </div>
-            </div>
-            <div class="col-lg-6">
-              <h1 class="h2 h1-custom">Inclusion & exclusion criteria reference</h1>
-              <h2 class="h5 h2-custom">Number of participants</h2>
-              <p>Approximately 5,600 participants will be randomly assigned to study intervention (1:1 to ziltivekimab or placebo).</p>
-              <h2 class="h5 h2-custom">Participant characteristics</h2>
-              <p>Key inclusion and exclusion criteria are summarised below:</p>
-            </div>
-          </div>
-				</div>
-				<div class="col-lg-6">
-					<div>
-						<div class="d-flex align-items-center alert alert-light m-0 p-2 iconbox w-100"> <i class="fa-xl fa-regular fa-circle-check"></i>
-							<h2 class="h5 h2-custom header-padding">Key inclusion criteria</h2> </div>
-						<ul>
-							<li>Serum hs-CRP ≥2 mg/L at screening (visit 1)<a class="super" href="#note-a1">a</a>
-								<br>
-							</li>
-						</ul>
-						<p class="mb-0 mt-2 text-uppercase"><b>Disease specific - cardiovascular</b></p>
-						<ul>
-							<li>At least one of the following<a class="super" href="#note-a1">a</a>:
-								<br>
-								<ol class="alphabetic">
-									<li>NT-proBNP ≥300 pg/mL at screening (Visit 1) for patients without ongoing atrial fibrillation/flutter. If ongoing atrial fibrillation/flutter at screening (visit 1), NT- proBNP must be ≥600 pg/mL.</li>
-									<li>Hospitalisation or urgent/unplanned visit with a primary diagnosis of decompensated heart failure which required intravenous loop diuretic treatment, within the last 9 months prior to screening (visit 1) <em>in combination with</em> NT-proBNP ≥ 200 pg/mL at screening (Visit 1) for patients without ongoing atrial fibrillation/flutter. If ongoing atrial fibrillation/flutter at screening (visit 1), NT-proBNP must be ≥600 pg/mL.</li>
-								</ol>
-							</li>
-							<li>Diagnosis of heart failure (NYHA Class II-IV).</li>
-							<li>LVEF > 40% documented by echocardiography within 12 months prior to <em>or</em> at screening (visit 1). The LVEF must be documented in medical records and the most recent measurement must be used to determine eligibility with no interim event signalling potential deterioration in ejection fraction (e.g., MI or HF hospitalisation).</li>
-							<li>Structural heart disease <em>and/or</em> functional heart disease documented by echocardiography within 12 months prior to <em>or</em> at screening (visit 1) showing at least one of the following:</li>
-							<li>LA volume index > 34 mL/m2</li>
-							<li>LA diameter ≥ 3.8 cm.</li>
-							<li>LA length ≥ 5.0 cm.</li>
-							<li>LA area ≥ 20 cm2.</li>
-							<li>LA volume ≥ 55 mL.</li>
-							<li>Intraventricular septal thickness ≥1.1 cm.</li>
-							<li>Posterior wall thickness ≥1.1 cm.</li>
-							<li>LV mass index ≥115 g⁄m2 in men or ≥ 95 g⁄m2 in women.</li>
-							<li>E/e’ (mean septal and lateral) ≥ 10.</li>
-							<li>e’ (mean septal and lateral) < 9 cm/s.</li>
-							<li>No heart failure hospitalisations or urgent heart failure visits between screening (visit 1) and randomisation (visit 2).</li>
-						</ul>
+			}
+			.loader-wait{
+			background-color: white;
+			z-index: 999;
+			width: 100%;
+			height: 100%;
+			position: fixed;
+			}
+		</style>
+		<script src="/jquery-3.7.1.min.js"></script>
+		<script>
+			$(window).on('DOMContentLoaded', function() {
+				window.scrollTo(0, 0);
+				$('#greetModal').modal('show');
+				$('.loader-wait').fadeOut(750);
+				setTimeout(() => {
+					$('.loader-wait').remove()
+				}, 750);
+			});
+		</script>
+				<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+	</head>
+	<body>
+		<style>
+			p.specialnote:target{
+			background-color:lightgrey;
+			border-radius: 3px
+			}
+			.modal.fade .modal-dialog {
+			transition: transform 0.3s ease-out;
+			transform: translateY(0);
+			}
+			.modal.fade.show .modal-dialog {
+			transform: translateY(0);
+			}
+			.modal.fade:not(.show) .modal-dialog {
+			transform: translateY(-100%);
+			}
+			.modal-footer{
+			border:transparent
+			}
+		</style>
+		<div class="loader-wait">
+		</div>
+		<div class="modal fade" id="greetModal" tabindex="-1" aria-labelledby="greetModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-fullscreen modal-dialog-centered">
+				<div class="modal-content p-3" style="background: no-repeat, linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.45)), url('modalbg.webp'); background-size: cover; background-position-x: -66%">
+					<div class="modal-body text-left w-75 text-white d-flex align-items-end">
+						<h1>Welcome to HERMES.</h1>
+					</div>
+					<div class="modal-body text-left w-75 text-white d-flex align-items-end">
+						<p>HERMES is a phase 3 cardiovascular outcome trial(CVOT) exploring the potential cardiovascular effects of ziltivekimab versus placebo on morbidity and mortality in patients with heart failure with mildly reduced (HFmrEF) or preserved ejection fraction (HFpEF) and systemic inflammation. The trial will involve around 5,600 patients globally from more than 40 countries.</p>
+					</div>
+					<div class="modal-footer justify-content-start">
+						<button type="button" class="btn btn-light text-uppercase rounded-pill btn-lg btn-learnmore" data-bs-dismiss="modal">Learn more <i class="fa text-black fa-arrow-right"></i></button>
 					</div>
 				</div>
-				<div class="col-lg-6">
-					<div>
-						<div class="d-flex align-items-center alert alert-light m-0 p-2 iconbox w-100"> <i class="fa-xl fa-regular fa-circle-xmark"></i>
-							<h2 class="h5 h2-custom header-padding">Key exclusion criteria</h2> </div>
-						<p class="mb-0 mt-2 text-uppercase"><b>Medical conditions – cardiovascular</b></p>
-						<ul>
-							<li>Myocardial infarction, stroke, unstable angina pectoris, transient ischaemic attack, or heart failure hospitalisation, within 30 days prior to screening (visit 1).</li>
-							<li>Systolic blood pressure ≥180 mmHg at screening (visit 1). If the systolic blood pressure is 160-179 mmHg, the patient should be receiving ≥3 antihypertensive drugs. <em>(Note: Potential participants may be retested for this criterion within the visit window and without rescreening, at the discretion of the investigator).</em></li>
-							<li>Heart rate above 110 or below 40 beats per minute as evaluated on the ECG performed at screening (visit 1) <em>(Note: Potential participants may be retested for this criterion within the visit window and without rescreening, at the discretion of the investigator).</em></li>
-							<li>Planned coronary, carotid or peripheral artery revascularisation known during the screening period (visit 1). <em>(Note: Planned coronary angiogram is not exclusionary).</em></li>
-							<li>Planned cardiac device or atrial flutter/atrial fibrillation ablation procedure known during the screening period (visit 1).</li>
-							<li>Major cardiac surgical, non-cardiac surgical, or major endoscopic procedure (thoracoscopic orlaparoscopic) within the past 60 days prior to randomisation (visit 2) or any major surgical procedure planned at the time of randomisation (visit 2).</li>
-							<li>Heart failure due to infiltrative cardiomyopathy (e.g., sarcoid, amyloid), arrhythmogenic right ventricular cardiomyopathy, Takutsubo cardiomyopathy, genetic hypertrophic cardiomyopathy or obstructive cardiomyopathy, active myocarditis, constrictive pericarditis, cardiac tamponade, uncorrected more than moderate primary valve disease.</li>
-							<li>Primary pulmonary hypertension, chronic pulmonary embolism, severe pulmonary disease including COPD.</li>
-							<li>Any other condition judged by the investigator that could account for heart failure symptoms and signs (e.g., anaemia, hypothyroidism).</li>
-						</ul>
-						<p class="mb-0 mt-2 text-uppercase"><b>Medical conditions – infections/immunosuppression</b></p>
-						<ul>
-							<li>Clinical evidence of, or suspicion of, active infection at the discretion of the investigator.</li>
-						</ul>
+			</div>
+		</div>
+		<header>
+			<div class="container p-0">
+				<div class="w-100 header-data">
+					<div class="d-table-cell" style="margin: 0 auto">
 					</div>
 				</div>
-        <p id="note-a1"><span class="super">a</span> Patients participating in the prevalence study (NN6018-7527) may be enrolled based on the hs-CRP <em>and/or</em> NT-proBNP (requiring corresponding ECG from the same date) results obtained in the study, if no more than 90 days old.</p>
-				<div class="col-lg-12">
-					<h2 class="h5 h2-custom">Data monitoring committee</h2>
-					<p>Yes</p>
-				</div>
-				<div class="col-lg-9" style="margin: 0 auto">
-					<h1 class="h2 h1-custom">Study Population</h1>
-					<p>Prospective approval of protocol deviations to recruitment and enrolment criteria, also known as protocol waivers or exemptions, is not permitted.</p>
-					<p>Pre-screening is defined as review of the patient medical records, including handing out participant information, as well as database review. Any pre-screening activities must be documented on site by the investigator.</p>
-					<h2 class="h5 h2-custom">Inclusion criteria</h2>
-					<p>All inclusion criteria are based on the participants’ medical records, except for inclusion criteria #3 (hs-CRP at central laboratory), #4 (NT-proBNP at central laboratory, and ECG assessed at screening) and #5 (NYHA class) assessed at screening (visit 1).</p>
-					<p>Local requirements may apply. China, Czech Republic, France, Germany, Hungary, Lithuania, Netherlands, Portugal, Singapore, South Korea, Spain, Taiwan: see country/region-specific requirements (Appendix 11, Section 10.11).</p>
-					<p>Participants are eligible to be included in the study only if all the following criteria apply:</p>
-					<p class="mb-0 mt-2 text-uppercase"><b>General</b></p>
-					<ol>
-						<li>Informed consent obtained before any study-related activities. Study-related activities are any procedures that are carried out as part of the study, including activities to determine suitability for the study.</li>
-						<li>Age 18 years or above at the time of signing the informed consent.</li>
-						<li>Serum hs-CRP ≥2 mg/L at screening (visit 1).<a class="super" href="#note-a2">a</a>
-							<p class="mb-0 mt-2 text-uppercase"><b>Disease specific - cardiovascular</b></p>
-						</li>
-						<li>At least one of the following<a class="super" href="#note-a2">a</a>:
-							<br>
-							<ol class="alphabetic">
-								<li>NT-proBNP ≥ 300 pg/mL at screening (Visit 1) for patients without ongoing atrial fibrillation/flutter. If ongoing atrial fibrillation/flutter at screening (visit 1), NT-proBNP must be ≥ 600 pg/mL.</li>
-								<li>HF hospitalisation or urgent/unplanned visit with a primary diagnosis of decompensated heart failure which required intravenous loop diuretic treatment, within the last 9 months prior to screening (visit 1) <em>in combination with</em> NT-proBNP ≥ 200 pg/mL at screening (Visit 1) for patients without ongoing atrial fibrillation/flutter. If ongoing atrial fibrillation/flutter at screening (visit 1), NT-proBNP must be ≥ 600 pg/mL.</li>
-							</ol>
-						</li>
-						<li>Diagnosis of heart failure (NYHA Class II-IV).</li>
-						<li>LVEF > 40% documented by echocardiography within 12 months prior to <em>or</em> at screening (visit 1). The LVEF must be documented in medical records and the most recent measurement must be used to determine eligibility with no interim event signalling potential deterioration in ejection fraction (e.g., MI or HF hospitalisation).</li>
-						<li>Structural heart disease <em>and/or</em> functional heart disease documented by echocardiography within 12 months prior to <em>or</em> at screening (visit 1) showing at least one of the following:
-							<br>
+			</div>
+		</header>
+		<article class="pb-3 mb-3">
+			<div class="container">
+				<div class="row pb-2 pt-2">
+					<div class="col-lg-12">
+						<div class="row pb-2 pt-2 d-flex flex-row-reverse align-items-center">
+							<div class="col-lg-6 text-center">
+								<div class="text-lg-end w-100">
+									<img class="image-responsive logo" alt="NovoNordisk Logo" src="novonordisk.png" />
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<h1 class="h2 h1-custom">Inclusion & exclusion criteria reference</h1>
+								<h2 class="h5 h2-custom">Number of participants</h2>
+								<p>Approximately 5,600 participants will be randomly assigned to study intervention (1:1 to ziltivekimab or placebo).</p>
+								<h2 class="h5 h2-custom">Participant characteristics</h2>
+								<p>Key inclusion and exclusion criteria are summarised below:</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<div>
+							<div class="d-flex align-items-center alert alert-light m-0 p-2 iconbox w-100">
+								<i class="fa-xl fa-regular fa-circle-check"></i>
+								<h2 class="h5 h2-custom header-padding">Key inclusion criteria</h2>
+							</div>
 							<ul>
-								<li>LA volume index > 34 mL/m2.</li>
+								<li>Serum hs-CRP ≥2 mg/L at screening (visit 1)<a class="super" href="#note-a1">a</a>
+									<br>
+								</li>
+							</ul>
+							<p class="mb-0 mt-2 text-uppercase"><b>Disease specific - cardiovascular</b></p>
+							<ul>
+								<li>
+									At least one of the following<a class="super" href="#note-a1">a</a>:
+									<br>
+									<ol class="alphabetic">
+										<li>NT-proBNP ≥300 pg/mL at screening (Visit 1) for patients without ongoing atrial fibrillation/flutter. If ongoing atrial fibrillation/flutter at screening (visit 1), NT- proBNP must be ≥600 pg/mL.</li>
+										<li>Hospitalisation or urgent/unplanned visit with a primary diagnosis of decompensated heart failure which required intravenous loop diuretic treatment, within the last 9 months prior to screening (visit 1) <em>in combination with</em> NT-proBNP ≥ 200 pg/mL at screening (Visit 1) for patients without ongoing atrial fibrillation/flutter. If ongoing atrial fibrillation/flutter at screening (visit 1), NT-proBNP must be ≥600 pg/mL.</li>
+									</ol>
+								</li>
+								<li>Diagnosis of heart failure (NYHA Class II-IV).</li>
+								<li>LVEF > 40% documented by echocardiography within 12 months prior to <em>or</em> at screening (visit 1). The LVEF must be documented in medical records and the most recent measurement must be used to determine eligibility with no interim event signalling potential deterioration in ejection fraction (e.g., MI or HF hospitalisation).</li>
+								<li>Structural heart disease <em>and/or</em> functional heart disease documented by echocardiography within 12 months prior to <em>or</em> at screening (visit 1) showing at least one of the following:</li>
+								<li>LA volume index > 34 mL/m2</li>
 								<li>LA diameter ≥ 3.8 cm.</li>
 								<li>LA length ≥ 5.0 cm.</li>
 								<li>LA area ≥ 20 cm2.</li>
@@ -170,157 +132,230 @@
 								<li>LV mass index ≥115 g⁄m2 in men or ≥ 95 g⁄m2 in women.</li>
 								<li>E/e’ (mean septal and lateral) ≥ 10.</li>
 								<li>e’ (mean septal and lateral) < 9 cm/s.</li>
+								<li>No heart failure hospitalisations or urgent heart failure visits between screening (visit 1) and randomisation (visit 2).</li>
 							</ul>
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<div>
+							<div class="d-flex align-items-center alert alert-light m-0 p-2 iconbox w-100">
+								<i class="fa-xl fa-regular fa-circle-xmark"></i>
+								<h2 class="h5 h2-custom header-padding">Key exclusion criteria</h2>
+							</div>
+							<p class="mb-0 mt-2 text-uppercase"><b>Medical conditions – cardiovascular</b></p>
+							<ul>
+								<li>Myocardial infarction, stroke, unstable angina pectoris, transient ischaemic attack, or heart failure hospitalisation, within 30 days prior to screening (visit 1).</li>
+								<li>Systolic blood pressure ≥180 mmHg at screening (visit 1). If the systolic blood pressure is 160-179 mmHg, the patient should be receiving ≥3 antihypertensive drugs. <em>(Note: Potential participants may be retested for this criterion within the visit window and without rescreening, at the discretion of the investigator).</em></li>
+								<li>Heart rate above 110 or below 40 beats per minute as evaluated on the ECG performed at screening (visit 1) <em>(Note: Potential participants may be retested for this criterion within the visit window and without rescreening, at the discretion of the investigator).</em></li>
+								<li>Planned coronary, carotid or peripheral artery revascularisation known during the screening period (visit 1). <em>(Note: Planned coronary angiogram is not exclusionary).</em></li>
+								<li>Planned cardiac device or atrial flutter/atrial fibrillation ablation procedure known during the screening period (visit 1).</li>
+								<li>Major cardiac surgical, non-cardiac surgical, or major endoscopic procedure (thoracoscopic orlaparoscopic) within the past 60 days prior to randomisation (visit 2) or any major surgical procedure planned at the time of randomisation (visit 2).</li>
+								<li>Heart failure due to infiltrative cardiomyopathy (e.g., sarcoid, amyloid), arrhythmogenic right ventricular cardiomyopathy, Takutsubo cardiomyopathy, genetic hypertrophic cardiomyopathy or obstructive cardiomyopathy, active myocarditis, constrictive pericarditis, cardiac tamponade, uncorrected more than moderate primary valve disease.</li>
+								<li>Primary pulmonary hypertension, chronic pulmonary embolism, severe pulmonary disease including COPD.</li>
+								<li>Any other condition judged by the investigator that could account for heart failure symptoms and signs (e.g., anaemia, hypothyroidism).</li>
+							</ul>
+							<p class="mb-0 mt-2 text-uppercase"><b>Medical conditions – infections/immunosuppression</b></p>
+							<ul>
+								<li>Clinical evidence of, or suspicion of, active infection at the discretion of the investigator.</li>
+							</ul>
+						</div>
+					</div>
+					<p class="specialnote" class="specialnote" id="note-a1"><span class="super">a</span> Patients participating in the prevalence study (NN6018-7527) may be enrolled based on the hs-CRP <em>and/or</em> NT-proBNP (requiring corresponding ECG from the same date) results obtained in the study, if no more than 90 days old.</p>
+					<div class="col-lg-12">
+						<h2 class="h5 h2-custom">Data monitoring committee</h2>
+						<p>Yes</p>
+					</div>
+					<div class="col-lg-9" style="margin: 0 auto">
+						<h1 class="h2 h1-custom">Study Population</h1>
+						<p>Prospective approval of protocol deviations to recruitment and enrolment criteria, also known as protocol waivers or exemptions, is not permitted.</p>
+						<p>Pre-screening is defined as review of the patient medical records, including handing out participant information, as well as database review. Any pre-screening activities must be documented on site by the investigator.</p>
+						<h2 class="h5 h2-custom">Inclusion criteria</h2>
+						<p>All inclusion criteria are based on the participants’ medical records, except for inclusion criteria #3 (hs-CRP at central laboratory), #4 (NT-proBNP at central laboratory, and ECG assessed at screening) and #5 (NYHA class) assessed at screening (visit 1).</p>
+						<p>Local requirements may apply. China, Czech Republic, France, Germany, Hungary, Lithuania, Netherlands, Portugal, Singapore, South Korea, Spain, Taiwan: see country/region-specific requirements (Appendix 11, Section 10.11).</p>
+						<p>Participants are eligible to be included in the study only if all the following criteria apply:</p>
+						<p class="mb-0 mt-2 text-uppercase"><b>General</b></p>
+						<ol>
+							<li>Informed consent obtained before any study-related activities. Study-related activities are any procedures that are carried out as part of the study, including activities to determine suitability for the study.</li>
+							<li>Age 18 years or above at the time of signing the informed consent.</li>
+							<li>
+								Serum hs-CRP ≥2 mg/L at screening (visit 1).<a class="super" href="#note-a2">a</a>
+								<p class="mb-0 mt-2 text-uppercase"><b>Disease specific - cardiovascular</b></p>
+							</li>
+							<li>
+								At least one of the following<a class="super" href="#note-a2">a</a>:
+								<br>
+								<ol class="alphabetic">
+									<li>NT-proBNP ≥ 300 pg/mL at screening (Visit 1) for patients without ongoing atrial fibrillation/flutter. If ongoing atrial fibrillation/flutter at screening (visit 1), NT-proBNP must be ≥ 600 pg/mL.</li>
+									<li>HF hospitalisation or urgent/unplanned visit with a primary diagnosis of decompensated heart failure which required intravenous loop diuretic treatment, within the last 9 months prior to screening (visit 1) <em>in combination with</em> NT-proBNP ≥ 200 pg/mL at screening (Visit 1) for patients without ongoing atrial fibrillation/flutter. If ongoing atrial fibrillation/flutter at screening (visit 1), NT-proBNP must be ≥ 600 pg/mL.</li>
+								</ol>
+							</li>
+							<li>Diagnosis of heart failure (NYHA Class II-IV).</li>
+							<li>LVEF > 40% documented by echocardiography within 12 months prior to <em>or</em> at screening (visit 1). The LVEF must be documented in medical records and the most recent measurement must be used to determine eligibility with no interim event signalling potential deterioration in ejection fraction (e.g., MI or HF hospitalisation).</li>
+							<li>
+								Structural heart disease <em>and/or</em> functional heart disease documented by echocardiography within 12 months prior to <em>or</em> at screening (visit 1) showing at least one of the following:
+								<br>
+								<ul>
+									<li>LA volume index > 34 mL/m2.</li>
+									<li>LA diameter ≥ 3.8 cm.</li>
+									<li>LA length ≥ 5.0 cm.</li>
+									<li>LA area ≥ 20 cm2.</li>
+									<li>LA volume ≥ 55 mL.</li>
+									<li>Intraventricular septal thickness ≥1.1 cm.</li>
+									<li>Posterior wall thickness ≥1.1 cm.</li>
+									<li>LV mass index ≥115 g⁄m2 in men or ≥ 95 g⁄m2 in women.</li>
+									<li>E/e’ (mean septal and lateral) ≥ 10.</li>
+									<li>e’ (mean septal and lateral) < 9 cm/s.</li>
+								</ul>
 							</li>
 							<li>No heart failure hospitalisations or urgent heart failure visits between screening (visit 1) and randomisation (visit 2).</li>
-					</ol>
-					<p id="note-a2"><span class="super">a</span>Patients participating in the prevalence study (NN6018-7527) may be enrolled based on the hs- CRP <em>and/or</em> NT-proBNP (requiring corresponding ECG from the same date) results obtained in the study, if no more than 90 days old.</p>
-					<p>Local requirements may apply. Germany, South Korea: see country/region-specific requirements (Appendix 11, Section 10.11).</p>
-				</div>
-				<div class="col-lg-9" style="margin: 0 auto">
-					<h2 class="h5 h2-custom">Exclusion criteria</h2>
-					<p>All exclusion criteria are based on the participants’ medical records, except for exclusion criterion #3 (urine pregnancy test), criteria #9 to #12 and #27 (central laboratory tests), criteria #26 (central laboratory tests, if applicable), criterion #14 (blood pressure) and criterion #15 (ECG).</p>
-					<p>Local requirements may apply. Argentina, Austria, Belgium, Brazil, China, Czech Republic, Denmark, Finland, France, Germany, Greece, Ireland, Italy, Latvia, Lithuania, Norway, Poland, Portugal, Romania, South Korea, Spain, Thailand, UK: see country/region-specific requirements (Appendix 11, Section 10.11).</p>
-					<p>Participants are excluded from the study if any of the following criteria apply:</p>
-					<p class="mb-0 mt-2 text-uppercase"><b>General</b></p>
-					<ol>
-						<li>Known or suspected hypersensitivity to study intervention or related products.</li>
-						<li>Previous randomisation in this study.</li>
-						<li>Female who is pregnant, breast-feeding or intends to become pregnant or is of childbearing potential and not using a highly effective contraceptive method, as defined in Appendix 4 (Section 10.4.2).</li>
-						<li>Participation (i.e., signed informed consent) in any other interventional clinical study of an approved or non-approved investigational medicinal product within 30 days prior to screening (visit 1).</li>
-						<li>Participation in any clinical study of an approved or non-approved device for the treatment of heart failure within 30 days prior to screening (visit 1).</li>
-						<li>Any disorder, which in the investigator’s opinion might jeopardise participant’s safety or compliance with the protocol.</li>
-						<li>Inadequate standard of care treatment which in the investigator’s opinion makes participation in the study inappropriate.</li>
-						<li>Unstable medical therapy for heart failure (including dose of diuretics) within 14 days prior to screening visit (visit 1) (at the discretion of the investigator).
-							<br>
-							<p class="mb-0 mt-2 text-uppercase"><b>Laboratory values</b></p>
-						</li>
-						<li>Absolute neutrophil count < 2×109/L at screening (visit 1).</li>
-						<li>Platelet count < 120×109/L at screening (visit 1).</li>
-						<li>Alanine aminotransferase (ALT) or aspartate aminotransferase (AST) >2.5 × upper limit ofnormal at screening (visit 1).</li>
-						<li>Active hepatitis C (positive anti-HCV and detectable HCV RNA) or hepatitis B (positive HBsAg <em>and/or</em> positive anti-HBc with detectable HBV DNA) at screening (visit 1). (Note: Participants with positive anti-HBc and undetectable HBV DNA can be enrolled; see Section 8.2.8 for details).
-							<br>
-						    <p class="mb-0 mt-2 text-uppercase"><b>Medical conditions – cardiovascular</b></p>
-						</li>
-						<li>Myocardial infarction, stroke, unstable angina pectoris, transient ischaemic attack, or heart failure hospitalisation within 30 days prior to screening (visit 1).</li>
-						<li>Systolic blood pressure ≥180 mmHg at screening (visit 1). If the systolic blood pressure is 160-179 mmHg, the patient should be receiving ≥3 antihypertensive drugs. <em>(Note: Potential participants may be retested for this criterion within the visit window and without rescreening, at the discretion of the investigator).</em></li>
-						<li>Heart rate above 110 or below 40 beats per minute as evaluated on the ECG performed at screening (visit 1) <em>(Note: Potential participants may be retested for this criterion within the visit window and without rescreening, at the discretion of the investigator).</em></li>
-						<li>Planned coronary, carotid or peripheral artery revascularisation known during the screening period (visit 1). <em>(Note: planned coronary angiogram is not exclusionary).</em></li>
-						<li>Planned cardiac device or atrial flutter/atrial fibrillation ablation procedure known during the screening period (visit 1).</li>
-						<li>Major cardiac surgical, non-cardiac surgical, or major endoscopic procedure (thoracoscopic or laparoscopic) within the past 60 days prior to randomisation (visit 2) or any major surgical procedure planned at the time of randomisation (visit 2).</li>
-						<li>Left Ventricular Assist Device (LVAD) implantation or heart transplantation</li>
-						<li>Heart failure due to infiltrative cardiomyopathy (e.g., sarcoid, amyloid), arrhythmogenic right ventricular cardiomyopathy, Takutsubo cardiomyopathy, genetic hypertrophic cardiomyopathy or obstructive cardiomyopathy, active myocarditis, constrictive pericarditis, cardiac tamponade, uncorrected more than moderate primary valve disease.</li>
-						<li>Primary pulmonary hypertension, chronic pulmonary embolism, severe pulmonary disease including COPD.</li>
-						<li>Any other condition judged by the investigator that could account for heart failure symptoms and signs (e.g., anaemia, hypothyroidism).
-						    <br>
-                            <p class="mb-0 mt-2 text-uppercase"><b>Medical conditions – infections/immunosuppression</b></p>
-						</li>
-						<li>Clinical evidence of, or suspicion of, active infection at the discretion of the investigator.</li>
-						<li>History of recurrent serious infections (infections leading to hospitalisation or use of i.v. antibiotics) in the 12 months prior to randomisation (visit 2), at the discretion of the investigator.</li>
-						<li>Diagnosis of human immunodeficiency virus (HIV) and not receiving a stable antiretroviral regimen, at the discretion of the investigator at screening (visit 1).</li>
-						<li>History or evidence of untreated latent tuberculosis (TB) such as (but not limited to):
-						    <br>
-							<ul>
-								<li>History of a positive TB test or chest X-ray compatible with latent TB; and TB treatment initiated less than 28 days prior to randomisation (visit 2).</li>
-								<li>Confirmed positive for latent TB at screening (visit 1) (see Section 8.2.7 for details) and TB treatment initiated less than 28 days prior to randomisation (visit 2).</li>
-							</ul>
-							<p class="mb-0 mt-2 text-uppercase"><b>Medical conditions - General health and safety</b></p>
-						</li>
-						<li>eGFR < 15 mL/min/1.73 m2(CKD-EPI10) at screening (visit 1)<a class="super" href="#note-a3">a</a> or chronic haemodialysis or peritoneal dialysis.</li>
-						<li>History of gastrointestinal perforation. <em>(Note: History of perforated appendicitis more than 5 years prior to screening (visit 1) is not exclusionary).</em></li>
-						<li>History of active diverticulitis in the 5 years prior to randomisation (visit 2).</li>
-						<li>History of inflammatory bowel disease that has been clinically active during the 12 months prior to randomisation (visit 2).</li>
-						<li>Presence or history of malignant neoplasms or in situ carcinomas (other than basal or squamous cell skin cancer, low risk prostate cancer, or in-situ carcinomas of the cervix, or carcinoma in situ/high grade prostatic intraepithelial neoplasia (PIN)) within 5 years prior to screening (visit 1).</li>
-						<li>History of bone marrow or solid organ transplant or anticipated to receive an organ transplant during the study. <em>Note: Patients no longer receiving immune suppressant therapy and who are in full remission following bone marrow transplant can be included in the study.</em>
-						    <br>
-						    <p class="mb-0 mt-2 text-uppercase"><b>Prior or current medication</b></p>
-						</li>
-                        <li>Received a live or attenuated-live vaccine product within 4 weeks of study intervention administration (visit 2) or expected to receive a live or attenuated-live vaccine product during the treatment period. <em>(Note: Not-live and not attenuated-live vaccines are not exclusionary. For guidance refer to Appendix 9, Section 10.9).</em></li>
-						<li>Use of preventive systemic antibiotics, systemic antivirals, or systemic antifungals at screening (visit 1). <em>(Note: “Systemic” is defined as oral or i.v. administered drugs that are absorbed into the circulation. Antibiotics used to treat latent TB are exempted).</em></li>
-						<li>Use of systemic immunosuppressive drugs (both small molecules and biologics) or disease modifying anti-rheumatic drugs (DMARDs including both biologic DMARDs like anti-TNF- alpha and conventional DMARDs like methotrexate) at screening (visit 1) or anticipated chronic use of such drugs any time during the study. <em>(Note: Use of otic, ophthalmic, inhaled, and topical corticosteroids or local corticosteroid injections are not exclusionary).</em></li>
-						<li>Use of anti-IL-6 products at screening (visit 1) or anticipated use of such drugs any time during the study.</li>
-					</ol>
-					<p id="note-a3"><span class="super">a</span>Patients participating in the prevalence study (NN6018-7527) may be enrolled based on the eGFR results obtained in the study, if no more than 90 days old. Local requirements may apply. Germany: see country/region-specific requirements (Appendix 11, Section 10.11).</p>
-				</div>
-				<div class="col-lg-9" style="margin: 0 auto">
-					<h2 class="h5 h2-custom">Lifestyle considerations</h2>
-					<p>There are no restrictions to lifestyle in the study.</p>
-				</div>
-				<div class="col-lg-9" style="margin: 0 auto">
-					<h2 class="h5 h2-custom">Screen failures</h2>
-					<p>A screen failure occurs when a participant who consents to participate in the clinical study is not subsequently eligible for participation according to the inclusion/exclusion criteria. A minimal set of screen failure information is required to ensure transparent reporting of screen failure participants to meet requirements from regulatory authorities. Minimal information includes informed consent date, demography, screen failure details and eligibility criteria.</p>
+						</ol>
+						<p class="specialnote" id="note-a2"><span class="super">a</span>Patients participating in the prevalence study (NN6018-7527) may be enrolled based on the hs- CRP <em>and/or</em> NT-proBNP (requiring corresponding ECG from the same date) results obtained in the study, if no more than 90 days old.</p>
+						<p>Local requirements may apply. Germany, South Korea: see country/region-specific requirements (Appendix 11, Section 10.11).</p>
+					</div>
+					<div class="col-lg-9" style="margin: 0 auto">
+						<h2 class="h5 h2-custom">Exclusion criteria</h2>
+						<p>All exclusion criteria are based on the participants’ medical records, except for exclusion criterion #3 (urine pregnancy test), criteria #9 to #12 and #27 (central laboratory tests), criteria #26 (central laboratory tests, if applicable), criterion #14 (blood pressure) and criterion #15 (ECG).</p>
+						<p>Local requirements may apply. Argentina, Austria, Belgium, Brazil, China, Czech Republic, Denmark, Finland, France, Germany, Greece, Ireland, Italy, Latvia, Lithuania, Norway, Poland, Portugal, Romania, South Korea, Spain, Thailand, UK: see country/region-specific requirements (Appendix 11, Section 10.11).</p>
+						<p>Participants are excluded from the study if any of the following criteria apply:</p>
+						<p class="mb-0 mt-2 text-uppercase"><b>General</b></p>
+						<ol>
+							<li>Known or suspected hypersensitivity to study intervention or related products.</li>
+							<li>Previous randomisation in this study.</li>
+							<li>Female who is pregnant, breast-feeding or intends to become pregnant or is of childbearing potential and not using a highly effective contraceptive method, as defined in Appendix 4 (Section 10.4.2).</li>
+							<li>Participation (i.e., signed informed consent) in any other interventional clinical study of an approved or non-approved investigational medicinal product within 30 days prior to screening (visit 1).</li>
+							<li>Participation in any clinical study of an approved or non-approved device for the treatment of heart failure within 30 days prior to screening (visit 1).</li>
+							<li>Any disorder, which in the investigator’s opinion might jeopardise participant’s safety or compliance with the protocol.</li>
+							<li>Inadequate standard of care treatment which in the investigator’s opinion makes participation in the study inappropriate.</li>
+							<li>
+								Unstable medical therapy for heart failure (including dose of diuretics) within 14 days prior to screening visit (visit 1) (at the discretion of the investigator).
+								<br>
+								<p class="mb-0 mt-2 text-uppercase"><b>Laboratory values</b></p>
+							</li>
+							<li>Absolute neutrophil count < 2×109/L at screening (visit 1).</li>
+							<li>Platelet count < 120×109/L at screening (visit 1).</li>
+							<li>Alanine aminotransferase (ALT) or aspartate aminotransferase (AST) >2.5 × upper limit ofnormal at screening (visit 1).</li>
+							<li>
+								Active hepatitis C (positive anti-HCV and detectable HCV RNA) or hepatitis B (positive HBsAg <em>and/or</em> positive anti-HBc with detectable HBV DNA) at screening (visit 1). (Note: Participants with positive anti-HBc and undetectable HBV DNA can be enrolled; see Section 8.2.8 for details).
+								<br>
+								<p class="mb-0 mt-2 text-uppercase"><b>Medical conditions – cardiovascular</b></p>
+							</li>
+							<li>Myocardial infarction, stroke, unstable angina pectoris, transient ischaemic attack, or heart failure hospitalisation within 30 days prior to screening (visit 1).</li>
+							<li>Systolic blood pressure ≥180 mmHg at screening (visit 1). If the systolic blood pressure is 160-179 mmHg, the patient should be receiving ≥3 antihypertensive drugs. <em>(Note: Potential participants may be retested for this criterion within the visit window and without rescreening, at the discretion of the investigator).</em></li>
+							<li>Heart rate above 110 or below 40 beats per minute as evaluated on the ECG performed at screening (visit 1) <em>(Note: Potential participants may be retested for this criterion within the visit window and without rescreening, at the discretion of the investigator).</em></li>
+							<li>Planned coronary, carotid or peripheral artery revascularisation known during the screening period (visit 1). <em>(Note: planned coronary angiogram is not exclusionary).</em></li>
+							<li>Planned cardiac device or atrial flutter/atrial fibrillation ablation procedure known during the screening period (visit 1).</li>
+							<li>Major cardiac surgical, non-cardiac surgical, or major endoscopic procedure (thoracoscopic or laparoscopic) within the past 60 days prior to randomisation (visit 2) or any major surgical procedure planned at the time of randomisation (visit 2).</li>
+							<li>Left Ventricular Assist Device (LVAD) implantation or heart transplantation</li>
+							<li>Heart failure due to infiltrative cardiomyopathy (e.g., sarcoid, amyloid), arrhythmogenic right ventricular cardiomyopathy, Takutsubo cardiomyopathy, genetic hypertrophic cardiomyopathy or obstructive cardiomyopathy, active myocarditis, constrictive pericarditis, cardiac tamponade, uncorrected more than moderate primary valve disease.</li>
+							<li>Primary pulmonary hypertension, chronic pulmonary embolism, severe pulmonary disease including COPD.</li>
+							<li>
+								Any other condition judged by the investigator that could account for heart failure symptoms and signs (e.g., anaemia, hypothyroidism).
+								<br>
+								<p class="mb-0 mt-2 text-uppercase"><b>Medical conditions – infections/immunosuppression</b></p>
+							</li>
+							<li>Clinical evidence of, or suspicion of, active infection at the discretion of the investigator.</li>
+							<li>History of recurrent serious infections (infections leading to hospitalisation or use of i.v. antibiotics) in the 12 months prior to randomisation (visit 2), at the discretion of the investigator.</li>
+							<li>Diagnosis of human immunodeficiency virus (HIV) and not receiving a stable antiretroviral regimen, at the discretion of the investigator at screening (visit 1).</li>
+							<li>
+								History or evidence of untreated latent tuberculosis (TB) such as (but not limited to):
+								<br>
+								<ul>
+									<li>History of a positive TB test or chest X-ray compatible with latent TB; and TB treatment initiated less than 28 days prior to randomisation (visit 2).</li>
+									<li>Confirmed positive for latent TB at screening (visit 1) (see Section 8.2.7 for details) and TB treatment initiated less than 28 days prior to randomisation (visit 2).</li>
+								</ul>
+								<p class="mb-0 mt-2 text-uppercase"><b>Medical conditions - General health and safety</b></p>
+							</li>
+							<li>eGFR < 15 mL/min/1.73 m2(CKD-EPI10) at screening (visit 1)<a class="super" href="#note-a3">a</a> or chronic haemodialysis or peritoneal dialysis.</li>
+							<li>History of gastrointestinal perforation. <em>(Note: History of perforated appendicitis more than 5 years prior to screening (visit 1) is not exclusionary).</em></li>
+							<li>History of active diverticulitis in the 5 years prior to randomisation (visit 2).</li>
+							<li>History of inflammatory bowel disease that has been clinically active during the 12 months prior to randomisation (visit 2).</li>
+							<li>Presence or history of malignant neoplasms or in situ carcinomas (other than basal or squamous cell skin cancer, low risk prostate cancer, or in-situ carcinomas of the cervix, or carcinoma in situ/high grade prostatic intraepithelial neoplasia (PIN)) within 5 years prior to screening (visit 1).</li>
+							<li>
+								History of bone marrow or solid organ transplant or anticipated to receive an organ transplant during the study. <em>Note: Patients no longer receiving immune suppressant therapy and who are in full remission following bone marrow transplant can be included in the study.</em>
+								<br>
+								<p class="mb-0 mt-2 text-uppercase"><b>Prior or current medication</b></p>
+							</li>
+							<li>Received a live or attenuated-live vaccine product within 4 weeks of study intervention administration (visit 2) or expected to receive a live or attenuated-live vaccine product during the treatment period. <em>(Note: Not-live and not attenuated-live vaccines are not exclusionary. For guidance refer to Appendix 9, Section 10.9).</em></li>
+							<li>Use of preventive systemic antibiotics, systemic antivirals, or systemic antifungals at screening (visit 1). <em>(Note: “Systemic” is defined as oral or i.v. administered drugs that are absorbed into the circulation. Antibiotics used to treat latent TB are exempted).</em></li>
+							<li>Use of systemic immunosuppressive drugs (both small molecules and biologics) or disease modifying anti-rheumatic drugs (DMARDs including both biologic DMARDs like anti-TNF- alpha and conventional DMARDs like methotrexate) at screening (visit 1) or anticipated chronic use of such drugs any time during the study. <em>(Note: Use of otic, ophthalmic, inhaled, and topical corticosteroids or local corticosteroid injections are not exclusionary).</em></li>
+							<li>Use of anti-IL-6 products at screening (visit 1) or anticipated use of such drugs any time during the study.</li>
+						</ol>
+						<p class="specialnote" id="note-a3"><span class="super">a</span>Patients participating in the prevalence study (NN6018-7527) may be enrolled based on the eGFR results obtained in the study, if no more than 90 days old. Local requirements may apply. Germany: see country/region-specific requirements (Appendix 11, Section 10.11).</p>
+					</div>
+					<div class="col-lg-9" style="margin: 0 auto">
+						<h2 class="h5 h2-custom">Lifestyle considerations</h2>
+						<p>There are no restrictions to lifestyle in the study.</p>
+					</div>
+					<div class="col-lg-9" style="margin: 0 auto">
+						<h2 class="h5 h2-custom">Screen failures</h2>
+						<p>A screen failure occurs when a participant who consents to participate in the clinical study is not subsequently eligible for participation according to the inclusion/exclusion criteria. A minimal set of screen failure information is required to ensure transparent reporting of screen failure participants to meet requirements from regulatory authorities. Minimal information includes informed consent date, demography, screen failure details and eligibility criteria.</p>
+					</div>
 				</div>
 			</div>
-		</div>
-	</article>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-	<link rel="stylesheet" href="/apis-font/font.css" crossorigin="anonymous">
-	<style>
-	body {
-		background-color: var(--nnSandGrey15);
-		color: var(--nnTrueBlue);
-		font-family: 'Apis', 'Arial', sans-serif;
-		font-size: 17px;
-    	line-height: 28px;
-	}
-	a.super,
-	span.super {
-		vertical-align: super;
-	}
-	
-	.iconbox {
-		display: -webkit-inline-box;
-		display: inline-box;
-	}
-	
-	ol.alphabetic {
-		list-style: lower-alpha
-	}
-	
-	h1.h1-custom {
-		z-index: 99;
-		position: relative;
-		margin: 0 auto;
-		padding: 16px 0 16px;
-		font-weight: 700;
-		color: var(--nnTrueBlue);
-		line-height: 32px;
-	}
-	h2.h2-custom {
-		color: var(--nnSeaBlue);
-		margin: 0;
-    	line-height: 32px;
-	}
-	a{
-		color: var(--nnSeaBlue);
-	}
-	h2.header-padding
-	{
-		padding-left: 0.5rem;
-	}
-	i {
-		color: var(--nnSeaBlue);
-	}
-	
-	div.header-data {
-		min-height: 22.5rem;
-		background: no-repeat url("header.webp");
-		text-align: center!important;
-		background-position-y: 50%;
-		background-size: cover;
-	}
-	
-	img.logo {
-		position: relative;
-		max-width: 200px;
-		max-height: 200px;
-	}
-	
-	b {
-		color: var(--nnTrueBlue)!important
-	}
-	</style>
-</body>
-
+		</article>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="/apis-font/font.css" crossorigin="anonymous">
+		<style>
+			body {
+			background-color: var(--nnSandGrey15);
+			color: var(--nnTrueBlue);
+			font-family: 'Apis', 'Arial', sans-serif;
+			}
+			a.super,
+			span.super {
+			vertical-align: super;
+			}
+			.iconbox {
+			display: -webkit-inline-box;
+			display: inline-box;
+			}
+			ol.alphabetic {
+			list-style: lower-alpha
+			}
+			h1.h1-custom {
+			z-index: 99;
+			position: relative;
+			margin: 0 auto;
+			padding: 16px 0 16px;
+			font-weight: 700;
+			color: var(--nnTrueBlue);
+			line-height: 32px;
+			}
+			h2.h2-custom {
+			color: var(--nnSeaBlue);
+			margin: 0;
+			line-height: 32px;
+			}
+			a{
+			color: var(--nnSeaBlue);
+			}
+			h2.header-padding
+			{
+			padding-left: 0.5rem;
+			}
+			i {
+			color: var(--nnSeaBlue);
+			}
+			div.header-data {
+			min-height: 25rem;
+			background: no-repeat url("header.webp");
+			text-align: center!important;
+			background-position-y: 14%;
+			background-position-x: 66%;
+			background-size: cover;
+			}
+			img.logo {
+			position: relative;
+			max-width: 200px;
+			max-height: 200px;
+			}
+			b {
+			color: var(--nnTrueBlue)!important
+			}
+			.btn-learnmore{
+			font-size: 17px;
+			line-height: 28px;
+			}
+		</style>
+	</body>
 </html>
