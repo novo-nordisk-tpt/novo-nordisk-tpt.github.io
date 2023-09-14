@@ -14,7 +14,7 @@
 			}
 			.loader-wait{
 			background-color: white;
-			z-index: 999;
+			z-index: 99;
 			width: 100%;
 			height: 100%;
 			position: fixed;
@@ -22,11 +22,14 @@
 		</style>
 		<script src="/jquery-3.7.1.min.js"></script>
 		<script>
-			$(window).on('DOMContentLoaded', function() {
+			$.ready(function()
+			{
 				window.scrollTo(0, 0);
+			});
+			$(window).on('DOMContentLoaded', function() {
 				$('#greetModal').modal('show');
-				$('.loader-wait').fadeOut(750);
 				setTimeout(() => {
+					$('.loader-wait').fadeOut('fast');
 					$('.loader-wait').remove()
 				}, 750);
 			});
@@ -36,6 +39,10 @@
 	</head>
 	<body>
 		<style>
+			#greetModal
+			{
+				z-index: 9999999
+			}
 			p.specialnote:target{
 			background-color:lightgrey;
 			border-radius: 3px
@@ -313,7 +320,6 @@
 			list-style: lower-alpha
 			}
 			h1.h1-custom {
-			z-index: 99;
 			position: relative;
 			margin: 0 auto;
 			padding: 16px 0 16px;
