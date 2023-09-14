@@ -5,21 +5,58 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=0.9">
 	<title>Inclusion & exclusion criteria reference</title>
+	<script src="/jquery-3.7.1.min.js"></script>
+	<style>
+	:root {
+        --nnSeaBlue: rgb(0,90,210);
+        --nnTrueBlue: rgb(0,25,101);
+        --nnSandGrey100: rgb(204,197,189);
+        --nnSandGrey40: rgb(235,232,229);
+        --nnSandGrey15: rgb(247,246,245);
+    }
+	</style>
+	<script>
+		$(window).on('DOMContentLoaded', function() {
+			$('.loader-wait').fadeOut(375);
+			setTimeout(() => {
+				$('.loader-wait').remove()
+			}, 450);
+		});
+	</script>
+	<style>
+		:root {
+			--nnSeaBlue: rgb(0,90,210);
+			--nnTrueBlue: rgb(0,25,101);
+			--nnSandGrey100: rgb(204,197,189);
+			--nnSandGrey40: rgb(235,232,229);
+			--nnSandGrey15: rgb(247,246,245);
+		}
+		.loader-wait{
+		background-color: white;
+		z-index: 999;
+		width: 100%;
+		height: 100%;
+		position: fixed;
+		}
+	</style>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 </head>
 
 <body>
+	<div class="loader-wait">
+	</div>
 	<header>
-		<div class="container p-0 pb-3">
+		<div class="container p-0">
 			<div class="w-100 header-data">
         <div class="d-table-cell" style="margin: 0 auto">
         </div>
-		</div>
+	</div>
 	</header>
 	<article class="pb-3 mb-3">
 		<div class="container">
-			<div class="row">
+			<div class="row pb-2 pt-2">
 				<div class="col-lg-12">
-          <div class="row d-flex flex-row-reverse align-items-center">
+          <div class="row pb-2 pt-2 d-flex flex-row-reverse align-items-center">
             <div class="col-lg-6 text-center">
               <div class="text-lg-end w-100">
                 <img class="image-responsive logo" alt="NovoNordisk Logo" src="novonordisk.png" />
@@ -43,7 +80,7 @@
 								<br>
 							</li>
 						</ul>
-						<p class="mb-0 mt-2"><b>Disease specific - cardiovascular</b></p>
+						<p class="mb-0 mt-2 text-uppercase"><b>Disease specific - cardiovascular</b></p>
 						<ul>
 							<li>At least one of the following<a class="super" href="#note-a1">a</a>:
 								<br>
@@ -73,7 +110,7 @@
 					<div>
 						<div class="d-flex align-items-center alert alert-light m-0 p-2 iconbox w-100"> <i class="fa-xl fa-regular fa-circle-xmark"></i>
 							<h2 class="h5 h2-custom header-padding">Key exclusion criteria</h2> </div>
-						<p class="mb-0 mt-2"><b>Medical conditions – cardiovascular</b></p>
+						<p class="mb-0 mt-2 text-uppercase"><b>Medical conditions – cardiovascular</b></p>
 						<ul>
 							<li>Myocardial infarction, stroke, unstable angina pectoris, transient ischaemic attack, or heart failure hospitalisation, within 30 days prior to screening (visit 1).</li>
 							<li>Systolic blood pressure ≥180 mmHg at screening (visit 1). If the systolic blood pressure is 160-179 mmHg, the patient should be receiving ≥3 antihypertensive drugs. <em>(Note: Potential participants may be retested for this criterion within the visit window and without rescreening, at the discretion of the investigator).</em></li>
@@ -85,7 +122,7 @@
 							<li>Primary pulmonary hypertension, chronic pulmonary embolism, severe pulmonary disease including COPD.</li>
 							<li>Any other condition judged by the investigator that could account for heart failure symptoms and signs (e.g., anaemia, hypothyroidism).</li>
 						</ul>
-						<p class="mb-0 mt-2"><b>Medical conditions – infections/immunosuppression</b></p>
+						<p class="mb-0 mt-2 text-uppercase"><b>Medical conditions – infections/immunosuppression</b></p>
 						<ul>
 							<li>Clinical evidence of, or suspicion of, active infection at the discretion of the investigator.</li>
 						</ul>
@@ -104,12 +141,12 @@
 					<p>All inclusion criteria are based on the participants’ medical records, except for inclusion criteria #3 (hs-CRP at central laboratory), #4 (NT-proBNP at central laboratory, and ECG assessed at screening) and #5 (NYHA class) assessed at screening (visit 1).</p>
 					<p>Local requirements may apply. China, Czech Republic, France, Germany, Hungary, Lithuania, Netherlands, Portugal, Singapore, South Korea, Spain, Taiwan: see country/region-specific requirements (Appendix 11, Section 10.11).</p>
 					<p>Participants are eligible to be included in the study only if all the following criteria apply:</p>
-					<p class="mb-0 mt-2"><b>General</b></p>
+					<p class="mb-0 mt-2 text-uppercase"><b>General</b></p>
 					<ol>
 						<li>Informed consent obtained before any study-related activities. Study-related activities are any procedures that are carried out as part of the study, including activities to determine suitability for the study.</li>
 						<li>Age 18 years or above at the time of signing the informed consent.</li>
 						<li>Serum hs-CRP ≥2 mg/L at screening (visit 1).<a class="super" href="#note-a2">a</a>
-							<p class="mb-0 mt-2"><b>Disease specific - cardiovascular</b></p>
+							<p class="mb-0 mt-2 text-uppercase"><b>Disease specific - cardiovascular</b></p>
 						</li>
 						<li>At least one of the following<a class="super" href="#note-a2">a</a>:
 							<br>
@@ -145,7 +182,7 @@
 					<p>All exclusion criteria are based on the participants’ medical records, except for exclusion criterion #3 (urine pregnancy test), criteria #9 to #12 and #27 (central laboratory tests), criteria #26 (central laboratory tests, if applicable), criterion #14 (blood pressure) and criterion #15 (ECG).</p>
 					<p>Local requirements may apply. Argentina, Austria, Belgium, Brazil, China, Czech Republic, Denmark, Finland, France, Germany, Greece, Ireland, Italy, Latvia, Lithuania, Norway, Poland, Portugal, Romania, South Korea, Spain, Thailand, UK: see country/region-specific requirements (Appendix 11, Section 10.11).</p>
 					<p>Participants are excluded from the study if any of the following criteria apply:</p>
-					<p class="mb-0 mt-2"><b>General</b></p>
+					<p class="mb-0 mt-2 text-uppercase"><b>General</b></p>
 					<ol>
 						<li>Known or suspected hypersensitivity to study intervention or related products.</li>
 						<li>Previous randomisation in this study.</li>
@@ -156,14 +193,14 @@
 						<li>Inadequate standard of care treatment which in the investigator’s opinion makes participation in the study inappropriate.</li>
 						<li>Unstable medical therapy for heart failure (including dose of diuretics) within 14 days prior to screening visit (visit 1) (at the discretion of the investigator).
 							<br>
-							<p class="mb-0 mt-2"><b>Laboratory values</b></p>
+							<p class="mb-0 mt-2 text-uppercase"><b>Laboratory values</b></p>
 						</li>
 						<li>Absolute neutrophil count < 2×109/L at screening (visit 1).</li>
 						<li>Platelet count < 120×109/L at screening (visit 1).</li>
 						<li>Alanine aminotransferase (ALT) or aspartate aminotransferase (AST) >2.5 × upper limit ofnormal at screening (visit 1).</li>
 						<li>Active hepatitis C (positive anti-HCV and detectable HCV RNA) or hepatitis B (positive HBsAg <em>and/or</em> positive anti-HBc with detectable HBV DNA) at screening (visit 1). (Note: Participants with positive anti-HBc and undetectable HBV DNA can be enrolled; see Section 8.2.8 for details).
 							<br>
-						    <p class="mb-0 mt-2"><b>Medical conditions – cardiovascular</b></p>
+						    <p class="mb-0 mt-2 text-uppercase"><b>Medical conditions – cardiovascular</b></p>
 						</li>
 						<li>Myocardial infarction, stroke, unstable angina pectoris, transient ischaemic attack, or heart failure hospitalisation within 30 days prior to screening (visit 1).</li>
 						<li>Systolic blood pressure ≥180 mmHg at screening (visit 1). If the systolic blood pressure is 160-179 mmHg, the patient should be receiving ≥3 antihypertensive drugs. <em>(Note: Potential participants may be retested for this criterion within the visit window and without rescreening, at the discretion of the investigator).</em></li>
@@ -176,7 +213,7 @@
 						<li>Primary pulmonary hypertension, chronic pulmonary embolism, severe pulmonary disease including COPD.</li>
 						<li>Any other condition judged by the investigator that could account for heart failure symptoms and signs (e.g., anaemia, hypothyroidism).
 						    <br>
-                            <p class="mb-0 mt-2"><b>Medical conditions – infections/immunosuppression</b></p>
+                            <p class="mb-0 mt-2 text-uppercase"><b>Medical conditions – infections/immunosuppression</b></p>
 						</li>
 						<li>Clinical evidence of, or suspicion of, active infection at the discretion of the investigator.</li>
 						<li>History of recurrent serious infections (infections leading to hospitalisation or use of i.v. antibiotics) in the 12 months prior to randomisation (visit 2), at the discretion of the investigator.</li>
@@ -187,7 +224,7 @@
 								<li>History of a positive TB test or chest X-ray compatible with latent TB; and TB treatment initiated less than 28 days prior to randomisation (visit 2).</li>
 								<li>Confirmed positive for latent TB at screening (visit 1) (see Section 8.2.7 for details) and TB treatment initiated less than 28 days prior to randomisation (visit 2).</li>
 							</ul>
-							<p class="mb-0 mt-2"><b>Medical conditions - General health and safety</b></p>
+							<p class="mb-0 mt-2 text-uppercase"><b>Medical conditions - General health and safety</b></p>
 						</li>
 						<li>eGFR < 15 mL/min/1.73 m2(CKD-EPI10) at screening (visit 1)<a class="super" href="#note-a3">a</a> or chronic haemodialysis or peritoneal dialysis.</li>
 						<li>History of gastrointestinal perforation. <em>(Note: History of perforated appendicitis more than 5 years prior to screening (visit 1) is not exclusionary).</em></li>
@@ -196,7 +233,7 @@
 						<li>Presence or history of malignant neoplasms or in situ carcinomas (other than basal or squamous cell skin cancer, low risk prostate cancer, or in-situ carcinomas of the cervix, or carcinoma in situ/high grade prostatic intraepithelial neoplasia (PIN)) within 5 years prior to screening (visit 1).</li>
 						<li>History of bone marrow or solid organ transplant or anticipated to receive an organ transplant during the study. <em>Note: Patients no longer receiving immune suppressant therapy and who are in full remission following bone marrow transplant can be included in the study.</em>
 						    <br>
-						    <p class="mb-0 mt-2"><b>Prior or current medication</b></p>
+						    <p class="mb-0 mt-2 text-uppercase"><b>Prior or current medication</b></p>
 						</li>
                         <li>Received a live or attenuated-live vaccine product within 4 weeks of study intervention administration (visit 2) or expected to receive a live or attenuated-live vaccine product during the treatment period. <em>(Note: Not-live and not attenuated-live vaccines are not exclusionary. For guidance refer to Appendix 9, Section 10.9).</em></li>
 						<li>Use of preventive systemic antibiotics, systemic antivirals, or systemic antifungals at screening (visit 1). <em>(Note: “Systemic” is defined as oral or i.v. administered drugs that are absorbed into the circulation. Antibiotics used to treat latent TB are exempted).</em></li>
@@ -216,17 +253,10 @@
 			</div>
 		</div>
 	</article>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="/apis-font/font.css" crossorigin="anonymous">
 	<style>
-	:root {
-        --nnSeaBlue: rgb(0,90,210);
-        --nnTrueBlue: rgb(0,25,101);
-        --nnSandGrey100: rgb(204,197,189);
-        --nnSandGrey40: rgb(235,232,229);
-        --nnSandGrey15: rgb(247,246,245);
-    }
 	body {
 		background-color: var(--nnSandGrey15);
 		color: var(--nnTrueBlue);
@@ -234,7 +264,6 @@
 		font-size: 17px;
     	line-height: 28px;
 	}
-	
 	a.super,
 	span.super {
 		vertical-align: super;
@@ -275,7 +304,7 @@
 	}
 	
 	div.header-data {
-		min-height: 20rem;
+		min-height: 22.5rem;
 		background: no-repeat url("header.webp");
 		text-align: center!important;
 		background-position-y: 50%;
