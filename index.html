@@ -6,18 +6,19 @@
 		<title>Inclusion & exclusion criteria reference</title>
 		<style>
 			:root {
-			--nnSeaBlue: rgb(0,90,210);
-			--nnTrueBlue: rgb(0,25,101);
-			--nnSandGrey100: rgb(204,197,189);
-			--nnSandGrey40: rgb(235,232,229);
-			--nnSandGrey15: rgb(247,246,245);
+				--nnSeaBlue: rgb(0,90,210);
+				--nnTrueBlue: rgb(0,25,101);
+				--nnSandGrey100: rgb(204,197,189);
+				--nnSandGrey40: rgb(235,232,229);
+				--nnSandGrey15: rgb(247,246,245);
+				--nnRed: rgb(230,85,63)
 			}
 			.loader-wait{
-			background-color: white;
-			z-index: 99;
-			width: 100%;
-			height: 100%;
-			position: fixed;
+				background-color: white;
+				z-index: 99;
+				width: 100%;
+				height: 100%;
+				position: fixed;
 			}
 		</style>
 		<script src="/jquery-3.7.1.min.js"></script>
@@ -41,51 +42,51 @@
 		<style>
 			#greetModal
 			{
-			z-index: 9999999
+				z-index: 9999999
 			}
 			p.specialnote:target{
-			background-color:lightgrey;
-			border-radius: 3px
+				background-color:lightgrey;
+				border-radius: 3px
 			}
 			.modal.fade .modal-dialog {
-			transition: transform 0.3s ease-out;
-			transform: translateY(0);
+				transition: transform 0.3s ease-out;
+				transform: translateY(0);
 			}
 			.modal.fade.show .modal-dialog {
-			transform: translateY(0);
+				transform: translateY(0);
 			}
 			.modal.fade:not(.show) .modal-dialog {
-			transform: translateY(-100%);
+				transform: translateY(-100%);
 			}
 			.modal-footer{
-			border:transparent
+				border:transparent
 			}
 			.img-container {
-			position: fixed;
-			top: 0;
-			left: 0;
-			height: 100%;
-			width: 100%;
-			z-index: 1;
+				position: fixed;
+				top: 0;
+				left: 0;
+				height: 100%;
+				width: 100%;
+				z-index: 1;
 			}
 			.img-container img {
-			object-fit: cover;
-			height: 100%;
-			width: 100%;
-			object-position: 70% 50%
+				object-fit: cover;
+				height: 100%;
+				width: 100%;
+				object-position: 70% 50%
 			}
 			.gradient-overlay {
-			position: fixed;
-			top: 0;
-			left: 0;
-			height: 100%;
-			width: 100%;
-			background: linear-gradient(transparent, rgba(42, 42, 42, 0.7));
-			z-index: 2;
+				position: fixed;
+				top: 0;
+				left: 0;
+				height: 100%;
+				width: 100%;
+				background: linear-gradient(transparent, rgba(42, 42, 42, 0.7));
+				z-index: 2;
 			}
 			.modal-fullscreen .modal-body
 			{
-			z-index: 3
+				z-index: 3
 			}
 		</style>
 		<div class="loader-wait">
@@ -336,63 +337,66 @@
 		<link rel="stylesheet" href="/apis-font/font.css" crossorigin="anonymous">
 		<style>
 			body {
-			background-color: var(--nnSandGrey15);
-			color: var(--nnTrueBlue);
-			font-family: 'Apis', 'Arial', sans-serif;
+				background-color: var(--nnSandGrey15);
+				color: var(--nnTrueBlue);
+				font-family: 'Apis', 'Arial', sans-serif;
 			}
 			a.super,
 			span.super {
-			vertical-align: super;
+				vertical-align: super;
 			}
 			.iconbox {
-			display: -webkit-inline-box;
-			display: inline-box;
+				display: -webkit-inline-box;
+				display: inline-box;
 			}
 			ol.alphabetic {
-			list-style: lower-alpha
+				list-style: lower-alpha
 			}
 			h1.h1-custom {
-			position: relative;
-			margin: 0 auto;
-			padding: 16px 0 16px;
-			font-weight: 700;
-			color: var(--nnTrueBlue);
-			line-height: 32px;
+				position: relative;
+				margin: 0 auto;
+				padding: 16px 0 16px;
+				font-weight: 700;
+				color: var(--nnTrueBlue);
+				line-height: 32px;
 			}
 			h2.h2-custom {
-			color: var(--nnSeaBlue);
-			margin: 0;
-			line-height: 32px;
+				color: var(--nnSeaBlue);
+				margin: 0;
+				line-height: 32px;
 			}
 			a{
-			color: var(--nnSeaBlue);
+				color: var(--nnSeaBlue);
 			}
 			h2.header-padding
 			{
-			padding-left: 0.5rem;
+				padding-left: 0.5rem;
 			}
 			i {
-			color: var(--nnSeaBlue);
+				color: var(--nnSeaBlue);
 			}
 			div.header-data {
-			min-height: 25rem;
-			background: no-repeat url("header.webp");
-			text-align: center!important;
-			background-position-y: 14%;
-			background-position-x: 66%;
-			background-size: cover;
+				min-height: 25rem;
+				background: no-repeat url("header.webp");
+				text-align: center!important;
+				background-position-y: 14%;
+				background-position-x: 66%;
+				background-size: cover;
+			}
+			a {
+				color: --nnRed
 			}
 			img.logo {
-			position: relative;
-			max-width: 200px;
-			max-height: 200px;
+				position: relative;
+				max-width: 200px;
+				max-height: 200px;
 			}
 			b {
-			color: var(--nnTrueBlue)!important
+				color: var(--nnTrueBlue)!important
 			}
 			.btn-learnmore{
-			font-size: 17px;
-			line-height: 28px;
+				font-size: 17px;
+				line-height: 28px;
 			}
 		</style>
 	</body>
