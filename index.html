@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
 	<head>
+		<link rel="icon" href="/favicon.ico">
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=0.9">
 		<title>Inclusion & exclusion criteria reference</title>
@@ -99,13 +100,22 @@
 						<img src="modalbg.webp">
 						<div class="gradient-overlay"></div>
 					</div>
-					<div class="modal-body text-left w-75 text-white d-flex align-items-end p-3">
-						<h1>Welcome to HERMES.</h1>
+					<div class="modal-body text-left w-75 text-white p-3 d-flex align-items-center">
+						<div class="d-block">
+							<div class="row">
+								<div class="col-lg-6">LOGO 1</div>
+								<div class="col-lg-6">LOGO 2</div>
+							</div>
+							<div class="row">
+								<div class="col-lg-12"><h1>Welcome to HERMES.</h1></div>
+							</div>
+						</div>
 					</div>
 					<div class="modal-body text-left w-75 text-white d-flex align-items-end p-3">
 						<p>HERMES is a phase 3 cardiovascular outcome trial(CVOT) exploring the potential cardiovascular effects of ziltivekimab versus placebo on morbidity and mortality in patients with heart failure with mildly reduced (HFmrEF) or preserved ejection fraction (HFpEF) and systemic inflammation. The trial will involve around 5,600 patients globally from more than 40 countries.</p>
 					</div>
-					<div class="modal-footer justify-content-start" style="z-index:999999999">
+					<div class="modal-footer justify-content-start" style="z-index:999999999; display:block">
+						<p style="color:white; "><em>This list is from global study protocol V3.0. Kindly ensure you are always following the latest approved protocol version in your country.</em></p>
 						<button type="button" class="btn btn-light text-uppercase rounded-pill btn-lg btn-learnmore" data-bs-dismiss="modal">Learn more <i class="fa text-black fa-arrow-right"></i></button>
 					</div>
 				</div>
@@ -135,7 +145,7 @@
 								<h2 class="h5 h2-custom">Number of participants</h2>
 								<p>Approximately 5,600 participants will be randomly assigned to study intervention (1:1 to ziltivekimab or placebo).</p>
 								<h2 class="h5 h2-custom">Participant characteristics</h2>
-								<p>Key inclusion and exclusion criteria are summarised below:</p>
+								<p class="title-subheading">Key inclusion and exclusion criteria are summarised below:</p>
 							</div>
 						</div>
 					</div>
@@ -143,7 +153,10 @@
 						<div>
 							<div class="d-flex align-items-center alert alert-light m-0 p-2 iconbox w-100">
 								<i class="fa-xl fa-regular fa-circle-check"></i>
-								<h2 class="h5 h2-custom header-padding">Key inclusion criteria</h2>
+								<div class="d-block">
+									<h2 class="h5 h2-custom header-padding">Key inclusion criteria</h2>
+									<small class="subheader header-padding">The patient must fulfill all criteria below in order to be eligible for enrollment.</small>
+								</div>
 							</div>
 							<ul>
 								<li>Serum hs-CRP ≥2 mg/L at screening (visit 1)<a class="super" href="#note-a1">a</a>
@@ -181,7 +194,10 @@
 						<div>
 							<div class="d-flex align-items-center alert alert-light m-0 p-2 iconbox w-100">
 								<i class="fa-xl fa-regular fa-circle-xmark"></i>
-								<h2 class="h5 h2-custom header-padding">Key exclusion criteria</h2>
+								<div class="d-block">
+									<h2 class="h5 h2-custom header-padding">Key exclusion criteria</h2>
+									<small class="subheader header-padding">Patients fulfilling one or more of the criteria below are not eligible for enrollment in the trial.</small>
+								</div>
 							</div>
 							<p class="mb-0 mt-2 text-uppercase"><b>Medical conditions – cardiovascular</b></p>
 							<ul>
@@ -369,9 +385,13 @@
 			a{
 				color: var(--nnRed);
 			}
-			h2.header-padding
+			h2.header-padding, small.header-padding
 			{
-				padding-left: 0.5rem;
+				padding-left: 0.25rem;
+			}
+			small.subheader
+			{
+				font-size: 8.5pt;
 			}
 			i {
 				color: var(--nnSeaBlue);
