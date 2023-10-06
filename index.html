@@ -94,28 +94,32 @@
 		</div>
 		<!-- Modal -->
 		<div class="modal fade" id="greetModal" tabindex="-1" aria-labelledby="greetModalLabel" aria-hidden="true">
-			<div class="modal-dialog modal-fullscreen modal-dialog-centered">
+			<div class="modal-dialog modal-fullscreen modal-dialog-centered w-100">
 				<div class="modal-content p-0">
 					<div class="img-container">
 						<img src="modalbg.webp">
 						<div class="gradient-overlay"></div>
 					</div>
-					<div class="modal-body text-left w-75 text-white p-3 d-flex align-items-center">
+					<div class="modal-body text-start w-100 text-white p-3 d-flex align-items-center">
 						<div class="d-block">
-							<div class="row">
-								<div class="col-lg-6">LOGO 1</div>
-								<div class="col-lg-6">LOGO 2</div>
-							</div>
-							<div class="row">
-								<div class="col-lg-12"><h1>Welcome to HERMES.</h1></div>
+							<div class="card w-100 bg-transparent p-0" style="border: 0">
+								<div class="card-body p-0 pb-3">
+									<div class="row d-flex align-items-end p-0">
+										<div class="col-sm-6"><img class="image-responsive logo p-0 m-0" alt="Hermes Logo" src="hermes.png" height="50" /></div>
+										<div class="col-sm-6"><img class="image-responsive logo p-0 m-0" alt="NovoNordisk Logo" src="novonordisk.png" height="70" /></div>
+									</div>
+								</div>
+							  </div>
+							<div class="row pt-3 text-start">
+								<div class="col-lg-12 text-start"><h1>Welcome to HERMES.</h1></div>
 							</div>
 						</div>
 					</div>
-					<div class="modal-body text-left w-75 text-white d-flex align-items-end p-3">
+					<div class="modal-body text-start w-75 text-white d-flex align-items-end pt-3">
 						<p>HERMES is a phase 3 cardiovascular outcome trial(CVOT) exploring the potential cardiovascular effects of ziltivekimab versus placebo on morbidity and mortality in patients with heart failure with mildly reduced (HFmrEF) or preserved ejection fraction (HFpEF) and systemic inflammation. The trial will involve around 5,600 patients globally from more than 40 countries.</p>
 					</div>
-					<div class="modal-footer justify-content-start" style="z-index:999999999; display:block">
-						<p style="color:white; "><em>This list is from global study protocol V3.0. Kindly ensure you are always following the latest approved protocol version in your country.</em></p>
+					<div class="w-75 p-3 modal-footer justify-content-start" style="z-index:999999999; display:block">
+						<small style="color:white; "><em>This list is from global study protocol V3.0. Kindly ensure you are always following the latest approved protocol version in your country.</em></small><br>
 						<button type="button" class="btn btn-light text-uppercase rounded-pill btn-lg btn-learnmore" data-bs-dismiss="modal">Learn more <i class="fa text-black fa-arrow-right"></i></button>
 					</div>
 				</div>
@@ -133,11 +137,11 @@
 			<div class="container">
 				<div class="row pb-2 pt-2">
 					<div class="col-lg-12">
-						<div class="row pb-2 pt-2 d-flex flex-row-reverse align-items-center">
-							<div class="col-lg-6 p-2 text-center">
-								<div class="text-lg-end w-100">
-									<img class="image-responsive logo" alt="Hermesa Logo" src="hermes.png" />
-									<img class="image-responsive logo" alt="NovoNordisk Logo" src="novonordisk.png" />
+						<div class="row pb-2 pt-2 d-flex flex-row-reverse align-items-end">
+							<div class="col-lg-6 p-3">
+								<div class="row text-center d-block d-sm-flex flex-row-reverse align-items-end p-0">
+									<div class="col-sm-6 text-sm-end"><img class="image-responsive logo p-0 m-0" alt="NovoNordisk Logo" src="novonordisk.png" height="70" /></div>
+									<div class="col-sm-6 text-sm-start pt-2"><img class="image-responsive logo p-0 m-0" alt="Hermes Logo" src="hermes.png" height="50" /></div>
 								</div>
 							</div>
 							<div class="col-lg-6">
@@ -406,8 +410,7 @@
 			}
 			img.logo {
 				position: relative;
-				max-width: 200px;
-				max-height: 200px;
+				width: auto;
 			}
 			b {
 				color: var(--nnTrueBlue)!important
